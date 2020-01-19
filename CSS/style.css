@@ -35,7 +35,7 @@ header{
     margin-bottom: 25%;
 }
 
-.carousel-item img{
+#baanner .carousel-item img{
     width: 80%;
 }
 
@@ -199,9 +199,9 @@ header{
     height: 550px;
 }
 
-.carousel-item img{
+#smartphone .carousel-item img{
     width: 62%;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
 }
 
 #platforms ul li{
