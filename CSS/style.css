@@ -4,53 +4,71 @@
     scroll-behavior: smooth;
 }
 
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 .container{
     width: 90%;
 }
 
 header{
-    position: fixed;
-    z-index: 50;
+    padding: .5em 0;
     width: 100%;
 }
 
-.green{
-    position:fixed;
-    top:0;
-    background:#154D34;
-    width:100%;
-    height:50px;
-  }
+.navbar-brand{
+    font-size: 1.9em;
+}
 
-.nav-link{
-    font-size: .8em;
-    padding: 0;
-    margin: 0;
+.nav-item{
+    padding: 0 .5em;
+}
+
+.nav-item .btn{
+    margin: .3em 0;
+}
+
+.nav-item a{
+    font-size: .7em;
     color: #fff;
     font-weight: bold;
 }
 
 #banner{
-    height: 400px;
-    margin-bottom: 25%;
+    height: 50vh;
 }
 
 #baanner .carousel-item img{
     width: 80%;
 }
 
-#why{
-    height: 300px;
+#banner .carousel-item h2, #banner .carousel-item p{
+    text-align: center;
+    color: #fff;
 }
 
-#why-meritrade{
+#banner .carousel-item h2{
+    font-size: 2.5em;
+}
+
+#banner .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+#why-meritrade, #Downloads, #platforms{
     margin-top: 10%;
     margin-bottom: 7%;
 }
 
 #growth{
-    background-color: #e5e5e5;
-    margin-bottom: 5%;
+    background-color: hsl(0, 0%, 90%);
     color: #727272;
 }
 
@@ -82,23 +100,31 @@ header{
     justify-content: space-around;
     margin: 0 auto;
   }
+
+  .tab-menu div{
+      padding-bottom: 3%;
+  }
   
   /* Style the buttons that are used to open the tab content */
-  .tab div a {
+  .tab div span {
     background-color: #154D34;
-    text-align: center;
-    width: 150px;
     color: 	rgba(255,255,255,.3);
     border: none;
+    cursor: pointer;
   }
 
-  .tab div a i{
-      font-size: 50px;
+  .tab div span i{
+      font-size: 40px;
+  }
+
+  .tab div span p{
+      font-size: .8em;
+      font-weight: bold;
   }
   
   
   /* Create an active/current tablink class */
-  .tab div a.active {
+  .tab div span.active {
     border: none;
     color: #fff;
   }
@@ -117,6 +143,21 @@ header{
     padding-bottom: 5%;
     color: #727272;
     font-size: .9em;
+}
+
+  #video{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color: #727272;
+    font-size: .9em;
+}
+
+#video div{
+    margin-bottom: 2%;
+}
+
+#video div p{
+    color: #154D34;
 }
 
 #KYC ul li, #KYC ol li{
@@ -178,9 +219,10 @@ header{
     border: none;
 }
 
-#Downloads{
-    padding-top: 10%;
-    padding-bottom: 7%;
+.btn-success:hover{
+    background-color: #fff;
+    color: #154D34;
+    border: 2px solid #fff;
 }
 
 #form{
@@ -197,11 +239,13 @@ header{
     background-size: 80%;
     background-position: center;
     height: 550px;
+    padding-top: 7%;
+    padding-bottom: 5%;
 }
 
 #smartphone .carousel-item img{
-    width: 62%;
-    margin: 80px auto 0 auto;
+    width: 63%;
+    margin: 0px auto 0 auto;
 }
 
 #platforms ul li{
@@ -217,20 +261,20 @@ header{
 
 #form h4{
     border-bottom: 3px solid #66b266;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     text-align: center;
-    font-size: 1.3em;
+    font-size: .6em;
 }
 
 
 footer{
     background-color: #154D34;
-    padding-top: 7%;
-    padding-bottom: 1%;
+    padding-top: 45%;
+    padding-bottom: 20%;
     color: #fff;
 }
 
-footer h2, #why-meritrade h1, #Downloads h2, #platforms h2{
+footer h2, #why-meritrade h1, #bank-detail h1, #Downloads h2, #platforms h2{
     font-weight: lighter;
 }
 
@@ -249,8 +293,105 @@ footer .our-brand a{
 }
 
 @media only screen and (min-width: 700px) {
+    #banner{
+        height: 700px;
+        margin-bottom: 5%;
+        overflow: hidden;
+    }
+
     .tab-menu ul li{
         float: left;
         list-style-type: none;
     }
+
+    #form h4{
+        font-size: 1.3em;
+    }
+
+    footer{
+        background-color: #154D34;
+        padding-top: 7%;
+        padding-bottom: 1%;
+        color: #fff;
+    }
 }
+
+/*page loader*/
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background: #fff;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
+
+  .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #135D34;
+    z-index: 999999;
+    }
+
+    .spinner{
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 48%;
+    }
