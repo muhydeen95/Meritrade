@@ -3,16 +3,16 @@ $(document).ready(function(){
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       if (scroll > 300) {
-        $(".header").css("background" , "#154D34");
+        $(".fixed-top").css("background" , "#154D34");
       }
   
       else{
-        $(".header").css("background" , "rgba(51,51,51,.7)");  	
+        $(".fixed-top").css("background" , "rgba(51,51,51,.7)");  	
       }
     })
   })
 
-  function openCity(evt, cityName) {
+  function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
   
@@ -29,7 +29,18 @@ $(document).ready(function(){
     }
   
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+  //page loader
+  $(document).ready(function() {
+    //Preloader
+    preloaderFadeOutTime = 5000;
+    function hidePreloader() {
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+    });
   
