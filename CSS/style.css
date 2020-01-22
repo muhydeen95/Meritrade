@@ -69,6 +69,27 @@ header{
     margin-bottom: 7%;
 }
 
+.icon-wrapper{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 1em;
+    background-color: #135D34;
+}
+
+.icon-wrapper i{
+    font-size: 3.5em;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    color: #fff;
+}
+
 #growth{
     background-color: hsl(0, 0%, 90%);
     color: #727272;
