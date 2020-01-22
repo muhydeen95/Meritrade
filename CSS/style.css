@@ -69,25 +69,21 @@ header{
     margin-bottom: 7%;
 }
 
-.icon-wrapper{
-    position: relative;
-    width: 100px;
-    height: 100px;
+.icon-wrapper i{
+    font-size: 2em;
+    padding: 1em;
+    background: #135D34;
+    color: #fff;
     border-radius: 50%;
-    margin: 0 auto 1em;
-    background-color: #135D34;
+    margin-right: .5em;
+    transition: .5s;
 }
 
-.icon-wrapper i{
-    font-size: 3.5em;
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
-    color: #fff;
+.icon-wrapper i:hover{
+    color: #135D34;
+    background: white;
+    border: 2px solid #135D34;
+    transform: scale(1.2);
 }
 
 #growth{
