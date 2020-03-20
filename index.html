@@ -47,7 +47,24 @@
                   <a class="nav-link" href="#footer">CONTACT</a>
                 </li>
               <li class="nav-item">
-                <a class="btn btn-primary" href="#" tabindex="-1" aria-disabled="true" style="background-color: #135D35; color: #fff; border: 2px solid #fff;">LOGIN</a>
+                <a class="btn btn-primary open-butto" onClick="openForm()" href="#" tabindex="-1" aria-disabled="true" style="background-color: #135D35; color: #fff; border: 2px solid #fff;">LOGIN</a>
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                      <h2>Sign in to Meritrade</h2>
+                      <p>Enter your username and password</p>
+                      <input type="text" placeholder="Username" required>
+                      <input type="password" placeholder="Password" required>
+                      <select>
+                        <option>Select Starting Point</option>
+                        <option>Dashboard</option>
+                        <option>Portfolio</option>
+                        <option>Orderst</option>
+                        <option>Fixed Portfolio</option>
+                      </select>
+                      <button class="btn">LOGIN</button>
+                      <button class="cancel" onClick="closeForm()">C</button>
+                    </form>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="btn btn-primary" href="#" tabindex="-1" aria-disabled="true" style="color: #135D35; background-color: #fff; border: none;">OPEN AN ACCOUNT</a>
