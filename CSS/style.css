@@ -37,6 +37,78 @@ header{
     font-weight: bold;
 }
 
+.form-popup {
+  position: none;
+  padding: 20px;
+  border-radius: 10px;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 35%;
+  padding: 20px 40px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin: 5px 0 5px 0;
+  background: #f1f1f1;
+}
+
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin: 5px 0 5px 0;
+  background: #f1f1f1;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  position: absolute;
+  top: 40px;
+  font-size; 30px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+
 #banner{
     height: 50vh;
 }
