@@ -32,20 +32,10 @@ $(document).ready(function(){
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
   }
-
-  //page loader
-  $(document).ready(function() {
-    //Preloader
-    preloaderFadeOutTime = 5000;
-    function hidePreloader() {
-    var preloader = $('.spinner-wrapper');
-    preloader.fadeOut(preloaderFadeOutTime);
-    }
-    hidePreloader();
-    });
   
     function openForm() {
       document.getElementById("myForm").style.display = "block";
+      //document.getElementById("myForm").classList.add("popup-form");
     }
 
     function closeForm() {
