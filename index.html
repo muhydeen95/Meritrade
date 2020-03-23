@@ -47,24 +47,7 @@
                   <a class="nav-link" href="#footer">CONTACT</a>
                 </li>
               <li class="nav-item">
-                <a class="btn btn-primary open-butto" onClick="openForm()" href="#" tabindex="-1" aria-disabled="true" style="background-color: #135D35; color: #fff; border: 2px solid #fff;">LOGIN</a>
-                <div class="form-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
-                      <h2>Sign in to Meritrade</h2>
-                      <p>Enter your username and password</p>
-                      <input type="text" placeholder="Username" required>
-                      <input type="password" placeholder="Password" required>
-                      <select>
-                        <option>Select Starting Point</option>
-                        <option>Dashboard</option>
-                        <option>Portfolio</option>
-                        <option>Orderst</option>
-                        <option>Fixed Portfolio</option>
-                      </select>
-                      <button class="btn">LOGIN</button>
-                      <button class="cancel" onClick="closeForm()">C</button>
-                    </form>
-                </div>
+                <a class="btn btn-primary" onClick="openForm()" href="#" tabindex="-1" aria-disabled="true" style="background-color: transparent; color: #fff; border: 2px solid #fff;">LOGIN</a>
               </li>
               <li class="nav-item">
                 <a class="btn btn-primary" href="#" tabindex="-1" aria-disabled="true" style="color: #135D35; background-color: #fff; border: none;">OPEN AN ACCOUNT</a>
@@ -76,6 +59,27 @@
     </header>
 
     <main>
+      <div class="popup-form" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h3>Sign in to Meritrade</h3>
+          <p>Enter your username and password</p>
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <select>
+            <option>Select Starting Point</option>
+            <option>Dashboard</option>
+            <option>Portfolio</option>
+            <option>Orderst</option>
+            <option>Fixed Portfolio</option>
+          </select>
+          <button class="btn">LOGIN</button>
+          <i class="far fa-times-circle" onClick="closeForm()"></i>
+          <p class="forget-psw">
+            <a href="#">FORGET YOUR PASSWORD?</a>
+          </p>
+            
+        </form>
+    </div>
       <section id="banner">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -266,7 +270,7 @@
                               <p>Meristem GreenFest 2019 #UnjunkSeason</p>
                             </div>
                             <div class="col-md-4">
-                              <img src="..." alt="">
+                              <img src="/Images/mqdefault (17).jpg" alt="">
                               <p>Meristem Securities Is The Digital Stock Broker Of The Year - 2019</p>
                             </div>
                             <div class="col-md-4">
@@ -693,19 +697,5 @@
   </body>
 
   <!--CSS Spinner-->
-  <div class="spinner-wrapper">
-  <div class="spinner">
-    <div class="sk-cube-grid">
-      <div class="sk-cube sk-cube1"></div>
-      <div class="sk-cube sk-cube2"></div>
-      <div class="sk-cube sk-cube3"></div>
-      <div class="sk-cube sk-cube4"></div>
-      <div class="sk-cube sk-cube5"></div>
-      <div class="sk-cube sk-cube6"></div>
-      <div class="sk-cube sk-cube7"></div>
-      <div class="sk-cube sk-cube8"></div>
-      <div class="sk-cube sk-cube9"></div>
-    </div>
-  </div>
-  </div>
+ 
 </html>
